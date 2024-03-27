@@ -54,7 +54,8 @@ namespace HW02
 
         private void dispkay()
         {
-            textbox_A.Text = str2 + ' ' + soper + '\n' + str1;
+            textbox_A.Text = str2 + ' ' + soper;
+            textbox_B.Text = str1;
         }
 
         private void process(string s)
@@ -266,7 +267,7 @@ namespace HW02
 
         private void Num(string s)
         {
-
+            if (str1.Length > 20) return;
             if (soper == "") str2 = "";
             str1 += s;
             dispkay();
@@ -410,6 +411,7 @@ namespace HW02
             string key = e.Key.ToString();
             if(map.ContainsKey(key)) process(map[key]);
         }
+
 
         private void Help()
         {

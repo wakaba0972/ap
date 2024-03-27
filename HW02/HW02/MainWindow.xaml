@@ -8,8 +8,9 @@
         
         Title="Calculator" Height="500" Width="450" Background="#404040" KeyDown="Key_Listener" ResizeMode="NoResize">
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-        <StackPanel Orientation="Horizontal">
-            <TextBox Name="textbox_A" Height="100" Width="415" Margin="0, 0, 0, 10" Background="#202020" Foreground="White"  FontFamily="consola" FontSize="35" TextAlignment="Right" Focusable="False"/>
+        <StackPanel Orientation="Vertical">
+            <TextBox Name="textbox_A" Height="40" Width="415" BorderThickness="0" Background="#202020" Foreground="White"  FontFamily="consola" FontSize="20" TextAlignment="Right" Focusable="False"/>
+            <TextBox Name="textbox_B" Height="60" Width="415" BorderThickness="0" Margin="0, 0, 0, 10" Background="#202020" Foreground="White"  FontFamily="consola" FontSize="35" TextAlignment="Right" Focusable="False"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Margin="0, 2, 0, 0">
