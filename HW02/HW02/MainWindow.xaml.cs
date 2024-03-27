@@ -5,7 +5,6 @@
 using System.Windows;
 using System.Windows.Controls;
 
-
 namespace HW02
 {
     public partial class MainWindow : Window
