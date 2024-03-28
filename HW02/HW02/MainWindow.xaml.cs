@@ -9,7 +9,7 @@ namespace HW02
 {
     public partial class MainWindow : Window
     {
-        Dictionary<string, string> map = new Dictionary<string, string>()
+        readonly Dictionary<string, string> map = new Dictionary<string, string>()
         {
             {"NumPad9", "9"},
             {"NumPad8", "8"},
@@ -233,6 +233,12 @@ namespace HW02
         {
             calc();
             soper = "";
+
+            if(str1 == "")
+            {
+                str1 = str2;
+                str2 = "";
+            }
             dispkay();
         }
 
