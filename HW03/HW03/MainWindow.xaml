@@ -1,0 +1,31 @@
+﻿<Window x:Class="HW03.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW03"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Name="obj" Content="٩(´ᗜ`*)୨" FontSize="20"></Label>
+        <Image x:Name="img" Source="/NewFolder/images.png" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0 0 0 0" Width="50" Height="50" Visibility="Hidden"/>
+        <StackPanel Orientation="Horizontal" Margin="0, 300, 0, 0">
+            <StackPanel>
+                <RadioButton Content="horizon" Margin="25 25 0 0" Checked="RadioButton_Checked"></RadioButton>
+                <RadioButton Content="vertical" Margin="25 5 0 0" Checked="RadioButton_Checked"></RadioButton>
+                <RadioButton Content="jump" Margin="25 5 0 0" Checked="RadioButton_Checked"></RadioButton>
+                <RadioButton Content="random" Margin="25 5 0 0" Checked="RadioButton_Checked"></RadioButton>
+            </StackPanel>
+            <StackPanel Margin="50 0 0 0">
+                <CheckBox x:Name="cb" Content="colorful" Margin="25 25 0 0" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"></CheckBox>
+                <CheckBox x:Name="tb" Content="time" Margin="25 5 0 0" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"></CheckBox>
+                <CheckBox Content="size" Margin="25 5 0 0" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"></CheckBox>
+                <CheckBox Content="dvd" Margin="25 5 0 0" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"></CheckBox>
+            </StackPanel>
+            <StackPanel Margin="50 0 0 0">
+                <Label Content="speed" Margin="230 30 0 0"></Label>
+                <Slider Name="slide" Width="500" Margin="0 10 0 0" Value="25" Minimum="0" Maximum="50" ValueChanged="Slider_ValueChanged"></Slider>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
