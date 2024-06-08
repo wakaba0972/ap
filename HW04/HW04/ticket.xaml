@@ -1,0 +1,65 @@
+﻿<Page x:Class="HW04.ticket"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HW04"
+      mc:Ignorable="d" 
+      d:DesignHeight="610" d:DesignWidth="1020"
+      Title="ticket">
+
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" Height="50">
+                <Label Content="選擇電影" Margin="220 0 0 0" Foreground="White" FontSize="15" Height="40" Width="80"></Label>
+                <Label Content=">>>" Name="t1" Opacity="0" Margin="25 0 25 0" Foreground="White" FontSize="15" Height="40" Width="40"></Label>
+                <Label Content="影廳類型" Name="t2" Opacity="0" Foreground="White" FontSize="15" Height="40" Width="80"></Label>
+                <Label Content=">>>" Name="t3" Opacity="0" Margin="25 0 25 0" Foreground="White" FontSize="15" Height="40" Width="40"></Label>
+                <Label Content="選擇票種" Name="t4" Opacity="0" Foreground="White" FontSize="15" Height="40" Width="80"></Label>
+                <Label Content=">>>" Name="t5" Opacity="0" Margin="25 0 25 0" Foreground="White" FontSize="15" Height="40" Width="40"></Label>
+                <Label Content="加購" Name="t6" Opacity="0" Foreground="White" FontSize="15" Height="40" Width="80"></Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <GroupBox Header="電影" FontSize="40" Margin="20 50 0 0" Width="230" Height="350" Foreground="White" BorderThickness="0.5">
+                    <StackPanel>
+                        <RadioButton Content="冰雪奇緣" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="Movie_Checked"></RadioButton>
+                        <RadioButton Content="黑魔女：沉睡魔咒" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="Movie_Checked"></RadioButton>
+                        <RadioButton Content="動物方城市" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="Movie_Checked"></RadioButton>
+                        <RadioButton Content="美女與野獸" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="Movie_Checked"></RadioButton>
+                        <RadioButton Content="可可夜總會" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="Movie_Checked"></RadioButton>
+                        <RadioButton Content="刀劍神域" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="Movie_Checked"></RadioButton>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Name="g1" Header="影廳" Opacity="0" FontSize="40" Margin="20 -50 0 0" Width="190" Height="250" Foreground="White" BorderThickness="0.5">
+                    <StackPanel>
+                        <RadioButton Content="2D" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="Room_Checked"></RadioButton>
+                        <RadioButton Content="3D         +40$" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="Room_Checked"></RadioButton>
+                        <RadioButton Content="4DX      +60$" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="Room_Checked"></RadioButton>
+                        <RadioButton Content="IMAX    +80$" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="Room_Checked"></RadioButton>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Name="g2" Header="票種" Opacity="0" FontSize="40" Margin="20 0 0 0" Width="190" Height="300" Foreground="White" BorderThickness="0.5">
+                    <StackPanel>
+                        <RadioButton Content="全票       200$" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="Ticket_Checked"></RadioButton>
+                        <RadioButton Content="愛心票   150$" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="Ticket_Checked"></RadioButton>
+                        <RadioButton Content="敬老票   160$" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="Ticket_Checked"></RadioButton>
+                        <RadioButton Content="優待票   170$" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="Ticket_Checked"></RadioButton>
+                        <RadioButton Content="會員票   180$" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="Ticket_Checked"></RadioButton>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Name="g3" Header="加購" Opacity="0" FontSize="40" Margin="20 0 0 0" Width="300" Height="300" Foreground="White" BorderThickness="0.5">
+                    <StackPanel>
+                        <CheckBox Name="c0" Content="1) 爆米花                +50$" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="ccheck" Unchecked="cuncheck"></CheckBox>
+                        <CheckBox Name="c1" Content="2) 肥宅快樂水        +20$" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="ccheck" Unchecked="cuncheck"></CheckBox>
+                        <CheckBox Name="c2" Content="3) S級食材雜燴兔  +48763$" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="ccheck" Unchecked="cuncheck"></CheckBox>
+                        <CheckBox Name="c3" Content="4) 蟾蜍肉                +20$" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="ccheck" Unchecked="cuncheck"></CheckBox>
+                        <CheckBox Name="c4" Content="5) 會飛的高麗菜    +100$" FontSize="20" Foreground="White" Margin="20 20 0 0" Checked="ccheck" Unchecked="cuncheck"/>
+                    </StackPanel>
+                </GroupBox>
+            </StackPanel>
+            <StackPanel Name="b0" Opacity="0" Orientation="Horizontal">
+                <Button Name="but" Content="新增" Margin="800 0 0 0" HorizontalAlignment="Right" FontSize="20" Foreground="White" Background="DarkSlateGray" Width="150" Height="100" Click="Button_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,20 @@
+﻿<Page x:Class="HW04.Poster"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HW04"
+      mc:Ignorable="d" 
+      d:DesignHeight="610" d:DesignWidth="1010"
+      Title="Page1">
+
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <Button Height="610" Width="200" Opacity="0.2" Background="DarkSlateGray" HorizontalAlignment="Left" Click="Button_Click_1"></Button>
+            <StackPanel>
+                <Image Name="display_img" Opacity="0" Source="./image/zootopia.jpg" Width="610" Height="480" Margin="0 40 0 0"></Image>
+            </StackPanel>
+            <Button Height="610" Width="200" Opacity="0.2" Background="DarkSlateGray" HorizontalAlignment="Right" Click="Button_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="HW04.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW04"
+        mc:Ignorable="d"
+        Title="威銹訂票系統" Height="650" Width="1010" ResizeMode="NoResize" Background="Black">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" Background="DarkSlateGray">
+                <Button Content="現正熱映" Foreground="White" Background="DarkSlateGray" BorderThickness="0" FontSize="20" Height="40" Width="100" Margin="395 0 0 0" Click="Button_Click"></Button>
+                <Button Content="快速訂票" Foreground="White" Background="DarkSlateGray" BorderThickness="0" FontSize="20" Height="40" Width="100" Margin="10 0 0 0" Click="Button_Click_1"></Button>
+                <Button Name="car" Content="購物車(0)" Foreground="White" Background="DarkSlateGray" BorderThickness="0" FontSize="20" Height="40" Width="140" Margin="260 0 0 0" Click="Button_Click_2"></Button>
+            </StackPanel>
+            <Frame x:Name="frame" NavigationUIVisibility="Hidden">
+                
+            </Frame>
+        </StackPanel>
+    </Grid>
+</Window>
